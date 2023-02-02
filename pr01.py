@@ -1,24 +1,19 @@
-print("Enter Your Marks in Physics : ")
-phy = input()
-phy=int(phy)
-print("Enter Your Marks in Chemistry :")
-chem= input()
-chem=int(chem)
-print("Enter Your Marks in Biology :")
-bio= input()
-bio= int(bio)
-print("Enter Your Marks in Mathematics :")
-maths=input()
-maths=int(maths)
-total = phy+chem+bio+maths
-average = (total/400)*100
-print("Your Marks in Physics are : " , phy)
-print("Your Marks in Chemistry are :", chem)
-print("Your Marks in Biology are :", bio)
-print("Your Marks in Mathematics are :", maths)
-print("Your Total Marks Are : ", total)
-print("Your Percentage is :", average)
-if(total>(0.40*400) and phy>33 and maths>33 and bio>33 and chem>33):
-    print("Congrats You are Passed in The Examination !")
-else:
-    print("Better Luck Next Time ! :)")
+#  Write a program to accept an integer.Print the largest and smallest digit present in the number.
+#  example (1): if n=4623,the the output should be : Largest digit=6,Smallest digit =2
+#  example(2) : if n= 2045,then the output should be : Largest digit =5 , smallest digit =0
+print("Enter The Number :")
+n=input()
+n=int(n)
+large =0
+small =9
+temp=n
+while (temp>0):
+      digit=temp%10
+      if(digit>large):
+        large=digit
+      elif(digit<small):
+        small=digit
+temp=temp/10
+print("The Number is = ", n) 
+print("The Lrgest Digit is = ", large)
+print("The Smallest Digit is = ", small)
